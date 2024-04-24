@@ -32,10 +32,10 @@
 使用UIImage.image(.xxxx)方法进行使用对应图片，例如返回图标：UIImage.smart(.back_icon)
 
 #### 模版中仍有一些快捷方式可供大家使用，大家可以简单查看BaseUnit文件中的内容，以下做每个文件的简单介绍：
-AdapterExt -> 屏幕宽高比例适配方式
-BaseViewController -> 基础控制器类
-Common -> 屏幕通用宽高、导航栏高度等信息
-UIFontExt -> UIFont字体的快捷使用方法，常用使用方法： UIFont.font(of: CGFloat, weight: ZUFontWeight)，举例：UIFont.font(of: 12.fit(), weight: .regular)
-UILabelExt -> UILabel的快捷使用方法，常用使用方法：UILabel.label(text: String, textColor: UIColor, font: UIFont), 举例：UILabel.label("text", textColor: UIColor.color(.color_000000), font: UIFont.font(of: 12.fit(), weight: .regular))
+1.AdapterExt -> 屏幕宽高比例适配方式
+2.BaseViewController -> 基础控制器类
+3.Common -> 屏幕通用宽高、导航栏高度等信息
+4.UIFontExt -> UIFont字体的快捷使用方法，常用使用方法： UIFont.font(of: CGFloat, weight: ZUFontWeight)，举例：UIFont.font(of: 12.fit(), weight: .regular)
+5.UILabelExt -> UILabel的快捷使用方法，常用使用方法：UILabel.label(text: String, textColor: UIColor, font: UIFont), 举例：UILabel.label("text", textColor: UIColor.color(.color_000000), font: UIFont.font(of: 12.fit(), weight: .regular))
 
 ###### 如有相关问题或建议，欢迎大家提issues
