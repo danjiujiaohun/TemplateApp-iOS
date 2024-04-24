@@ -27,9 +27,9 @@
 ### UIColor快捷使用方式
 1.创建新颜色：
 
-    a.在Assets中的UIColor文件夹下新增一个新颜色，以color_xxxxxx(xxxxxx为颜色的16进制编码)
+a.在Assets中的UIColor文件夹下新增一个新颜色，以color_xxxxxx(xxxxxx为颜色的16进制编码)
   
-    b.在UIColor中新增枚举类型，新增刚刚新增的颜色
+b.在UIColor中新增枚举类型，新增刚刚新增的颜色
   
 2.快捷使用颜色：
 使用UIColor.color(.color_xxxxxx)方法进行使用对应颜色，例如纯白色：UIColor.color(.color_FFFFFF)
@@ -37,9 +37,9 @@
 ### UIImage快捷使用方式
 1.新增新图片：
 
-    a.将图片命名为：image_xxxx的命名方式，并拖入Assets中的UIImage文件夹下。
+a.将图片命名为：image_xxxx的命名方式，并拖入Assets中的UIImage文件夹下。
   
-    b.在UIImage文件中新增枚举类型，新增刚刚的图片文件名称，枚举值为图片名称去除image_部分
+b.在UIImage文件中新增枚举类型，新增刚刚的图片文件名称，枚举值为图片名称去除image_部分
   
 2.快捷使用图片
 使用UIImage.image(.xxxx)方法进行使用对应图片，例如返回图标：UIImage.smart(.back_icon)
