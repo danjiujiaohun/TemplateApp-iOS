@@ -17,6 +17,27 @@
 
 7.在终端执行pod install指令
 
+## 若想在原文件上进行更名操作：
+1.修改文件夹中.xcodeproj文件前缀为新文件名称
+
+2.删除文件夹中.xcworkspace文件和Pods文件夹
+
+3.修改Podfile文件中target 'TemplateApp-iOS' do的TemplateApp-iOS为新文件名称
+
+4.终端进入文件夹路径下，执行pod install操作，重新生成.xcworkspace文件
+
+5.终端输入git remote remove origin指令，移除远端仓库地址
+
+6.终端输入git remote add origin <new-repo-url>，修改为新的远端仓库地址，git remote -v指令可查看当前远端仓库地址
+
+7.Xcode打开新生成的.xworkspace文件
+
+8.选择项目导航器中的项目文件，并进入TARGETS->Build Settings
+
+9.filter搜索Info.plist，找到下方Info.plist File设置项，并修改plist路径为"newProjectName/Info.plist"路径(newProjectName更换为你的新文件名称)
+
+10.编译运行项目
+
 ### BaseViewController
 1.使用方式：
 控制器继承BaseViewController类
